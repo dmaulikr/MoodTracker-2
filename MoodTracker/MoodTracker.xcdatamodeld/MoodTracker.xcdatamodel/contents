@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="6751" systemVersion="13F34" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="MoodEntry" syncable="YES">
+        <attribute name="anxiety" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="createdAt" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="mood" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <relationship name="weather" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="WeatherEntry" inverseName="mood" inverseEntity="WeatherEntry" syncable="YES"/>
+    </entity>
+    <entity name="WeatherEntry" syncable="YES">
+        <attribute name="createdAt" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="stringDescription" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <relationship name="mood" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="MoodEntry" inverseName="weather" inverseEntity="MoodEntry" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="MoodEntry" positionX="-63" positionY="-18" width="128" height="103"/>
+        <element name="WeatherEntry" positionX="-54" positionY="9" width="128" height="88"/>
+    </elements>
+</model>

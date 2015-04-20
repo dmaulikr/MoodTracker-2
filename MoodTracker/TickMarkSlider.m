@@ -42,10 +42,12 @@
     [tickPath stroke];
 }
 
+//the track extended past the max and min tick marks so i clipped off 15 pts on each end
 - (CGRect)trackRectForBounds:(CGRect)bounds{
     return CGRectMake(15, CGRectGetHeight(bounds) / 2, CGRectGetWidth(bounds) - 30, 3);
 }
 
+// needed to adjust the thumb image position becuase it was not centering on the tick marks
 -(CGRect)thumbRectForBounds:(CGRect)bounds trackRect:(CGRect)rect value:(float)value{
     if (value == self.minimumValue) {
         return CGRectOffset([super thumbRectForBounds:bounds trackRect:rect value:value], -15, 0);

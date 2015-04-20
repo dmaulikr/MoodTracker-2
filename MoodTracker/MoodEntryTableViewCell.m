@@ -80,10 +80,7 @@
     [super layoutSubviews];
     
     CGFloat W = CGRectGetWidth(self.bounds);
-//    CGFloat H = CGRectGetHeight(self.bounds);
     CGFloat margin = 10;
-    //maybe make the image view align with the min Y of the imageView
-    //potentially replace pingTopMargin with H/5
     
     self.imageView.frame = CGRectMake(margin, margin, 60, 60);
     

@@ -54,7 +54,7 @@
     
     //How are you feeling
     {
-        CGFloat width = 300;
+        CGFloat width = CGRectGetWidth(self.view.bounds);
         UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(CGRectGetWidth(self.view.bounds)/2 - width/2, top +margin, width, 30)];
         label.backgroundColor = [UIColor clearColor];
         label.font = [UIFont boldSystemFontOfSize:22];
@@ -70,7 +70,7 @@
     
     //Mood Label
     {
-        CGFloat width = 120;
+        CGFloat width = CGRectGetWidth(self.view.bounds);
         UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(CGRectGetWidth(self.view.bounds)/2 - width/2, top + margin, width, 20)];
         label.font = [UIFont systemFontOfSize:headerLabelSize];
         label.textAlignment = NSTextAlignmentCenter;
@@ -99,7 +99,7 @@
     
     //Anxiety Label
     {
-        CGFloat width = 120;
+        CGFloat width = CGRectGetWidth(self.view.bounds);
         UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(CGRectGetWidth(self.view.bounds)/2 - width/2, top + margin, width, 20)];
         label.font = [UIFont systemFontOfSize:headerLabelSize];
         label.textAlignment = NSTextAlignmentCenter;
@@ -149,7 +149,7 @@
     
     //Energy Label
     {
-        CGFloat width = 120;
+        CGFloat width = CGRectGetWidth(self.view.bounds);
         UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(CGRectGetWidth(self.view.bounds)/2 - width/2, top + margin, width, 20)];
         label.font = [UIFont systemFontOfSize:headerLabelSize];
         label.textAlignment = NSTextAlignmentCenter;

@@ -7,14 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0068E3221AE1F7E9002DA9F2 /* WeatherGetter.m in Sources */ = {isa = PBXBuildFile; fileRef = 0068E3211AE1F7E9002DA9F2 /* WeatherGetter.m */; };
 		008B52921AE0A9C10088E15D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 008B52911AE0A9C10088E15D /* main.m */; };
 		008B52951AE0A9C10088E15D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 008B52941AE0A9C10088E15D /* AppDelegate.m */; };
 		008B52981AE0A9C10088E15D /* MoodTracker.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 008B52961AE0A9C10088E15D /* MoodTracker.xcdatamodeld */; };
-		008B529B1AE0A9C10088E15D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 008B529A1AE0A9C10088E15D /* ViewController.m */; };
-		008B529E1AE0A9C10088E15D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 008B529C1AE0A9C10088E15D /* Main.storyboard */; };
 		008B52A01AE0A9C10088E15D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 008B529F1AE0A9C10088E15D /* Images.xcassets */; };
-		008B52A31AE0A9C10088E15D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 008B52A11AE0A9C10088E15D /* LaunchScreen.xib */; };
 		008B52AF1AE0A9C20088E15D /* MoodTrackerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 008B52AE1AE0A9C20088E15D /* MoodTrackerTests.m */; };
+		008B52BC1AE0C0C10088E15D /* FetchedResultsControllerDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 008B52B91AE0C0C10088E15D /* FetchedResultsControllerDataSource.m */; };
+		008B52BD1AE0C0C10088E15D /* MoodsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 008B52BB1AE0C0C10088E15D /* MoodsViewController.m */; };
+		008B52C01AE0C1C70088E15D /* MoodEntry.m in Sources */ = {isa = PBXBuildFile; fileRef = 008B52BF1AE0C1C70088E15D /* MoodEntry.m */; };
+		008B52C61AE0C87A0088E15D /* MoodEntryCreationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 008B52C51AE0C87A0088E15D /* MoodEntryCreationViewController.m */; };
+		00A121FC1AE4AD1400491AF2 /* LocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 00A121FB1AE4AD1400491AF2 /* LocationManager.m */; };
+		00D8D95E1AE4C16500E6A008 /* TickMarkSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = 00D8D95D1AE4C16500E6A008 /* TickMarkSlider.m */; };
+		00DBA9F41AE4E48E0033C873 /* MoodEntryTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 00DBA9F31AE4E48E0033C873 /* MoodEntryTableViewCell.m */; };
+		3CA9E952E9AA38CFAC66961F /* libPods-MoodTracker.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 896FCA38F34EE3C93D06CDD1 /* libPods-MoodTracker.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,20 +34,36 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0068E3201AE1F7E9002DA9F2 /* WeatherGetter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeatherGetter.h; sourceTree = "<group>"; };
+		0068E3211AE1F7E9002DA9F2 /* WeatherGetter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeatherGetter.m; sourceTree = "<group>"; };
 		008B528C1AE0A9C10088E15D /* MoodTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MoodTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		008B52901AE0A9C10088E15D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		008B52911AE0A9C10088E15D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		008B52931AE0A9C10088E15D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		008B52941AE0A9C10088E15D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		008B52971AE0A9C10088E15D /* MoodTracker.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MoodTracker.xcdatamodel; sourceTree = "<group>"; };
-		008B52991AE0A9C10088E15D /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		008B529A1AE0A9C10088E15D /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		008B529D1AE0A9C10088E15D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		008B529F1AE0A9C10088E15D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		008B52A21AE0A9C10088E15D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		008B52A81AE0A9C20088E15D /* MoodTrackerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MoodTrackerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		008B52AD1AE0A9C20088E15D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		008B52AE1AE0A9C20088E15D /* MoodTrackerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MoodTrackerTests.m; sourceTree = "<group>"; };
+		008B52B81AE0C0C10088E15D /* FetchedResultsControllerDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FetchedResultsControllerDataSource.h; sourceTree = "<group>"; };
+		008B52B91AE0C0C10088E15D /* FetchedResultsControllerDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FetchedResultsControllerDataSource.m; sourceTree = "<group>"; };
+		008B52BA1AE0C0C10088E15D /* MoodsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoodsViewController.h; sourceTree = "<group>"; };
+		008B52BB1AE0C0C10088E15D /* MoodsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoodsViewController.m; sourceTree = "<group>"; };
+		008B52BE1AE0C1C70088E15D /* MoodEntry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoodEntry.h; sourceTree = "<group>"; };
+		008B52BF1AE0C1C70088E15D /* MoodEntry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoodEntry.m; sourceTree = "<group>"; };
+		008B52C41AE0C87A0088E15D /* MoodEntryCreationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoodEntryCreationViewController.h; sourceTree = "<group>"; };
+		008B52C51AE0C87A0088E15D /* MoodEntryCreationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoodEntryCreationViewController.m; sourceTree = "<group>"; };
+		00A121FA1AE4AD1400491AF2 /* LocationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationManager.h; sourceTree = "<group>"; };
+		00A121FB1AE4AD1400491AF2 /* LocationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationManager.m; sourceTree = "<group>"; };
+		00D8D95C1AE4C16500E6A008 /* TickMarkSlider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TickMarkSlider.h; sourceTree = "<group>"; };
+		00D8D95D1AE4C16500E6A008 /* TickMarkSlider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TickMarkSlider.m; sourceTree = "<group>"; };
+		00DBA9F21AE4E48E0033C873 /* MoodEntryTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoodEntryTableViewCell.h; sourceTree = "<group>"; };
+		00DBA9F31AE4E48E0033C873 /* MoodEntryTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoodEntryTableViewCell.m; sourceTree = "<group>"; };
+		00DBA9F51AE4EAAE0033C873 /* CellProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CellProtocol.h; sourceTree = "<group>"; };
+		3C2BE6AAE009601A4EB9207B /* Pods-MoodTracker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoodTracker.release.xcconfig"; path = "Pods/Target Support Files/Pods-MoodTracker/Pods-MoodTracker.release.xcconfig"; sourceTree = "<group>"; };
+		858E53264E93B6B34323BB03 /* Pods-MoodTracker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoodTracker.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MoodTracker/Pods-MoodTracker.debug.xcconfig"; sourceTree = "<group>"; };
+		896FCA38F34EE3C93D06CDD1 /* libPods-MoodTracker.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MoodTracker.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,6 +71,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3CA9E952E9AA38CFAC66961F /* libPods-MoodTracker.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,12 +85,55 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0068E3191AE1ED58002DA9F2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				008B52BE1AE0C1C70088E15D /* MoodEntry.h */,
+				008B52BF1AE0C1C70088E15D /* MoodEntry.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		0068E31A1AE1ED6F002DA9F2 /* Data Source */ = {
+			isa = PBXGroup;
+			children = (
+				008B52B81AE0C0C10088E15D /* FetchedResultsControllerDataSource.h */,
+				008B52B91AE0C0C10088E15D /* FetchedResultsControllerDataSource.m */,
+			);
+			name = "Data Source";
+			sourceTree = "<group>";
+		};
+		0068E31B1AE1ED79002DA9F2 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				008B52BA1AE0C0C10088E15D /* MoodsViewController.h */,
+				008B52BB1AE0C0C10088E15D /* MoodsViewController.m */,
+				008B52C41AE0C87A0088E15D /* MoodEntryCreationViewController.h */,
+				008B52C51AE0C87A0088E15D /* MoodEntryCreationViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		0068E31C1AE1ED85002DA9F2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				00D8D95C1AE4C16500E6A008 /* TickMarkSlider.h */,
+				00D8D95D1AE4C16500E6A008 /* TickMarkSlider.m */,
+				00DBA9F21AE4E48E0033C873 /* MoodEntryTableViewCell.h */,
+				00DBA9F31AE4E48E0033C873 /* MoodEntryTableViewCell.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
 		008B52831AE0A9C10088E15D = {
 			isa = PBXGroup;
 			children = (
+				00DBA9F51AE4EAAE0033C873 /* CellProtocol.h */,
 				008B528E1AE0A9C10088E15D /* MoodTracker */,
 				008B52AB1AE0A9C20088E15D /* MoodTrackerTests */,
 				008B528D1AE0A9C10088E15D /* Products */,
+				324EBB0B43E88233C0BE4227 /* Pods */,
+				B3204A37D285666AB6575B6B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -85,12 +151,13 @@
 			children = (
 				008B52931AE0A9C10088E15D /* AppDelegate.h */,
 				008B52941AE0A9C10088E15D /* AppDelegate.m */,
-				008B52991AE0A9C10088E15D /* ViewController.h */,
-				008B529A1AE0A9C10088E15D /* ViewController.m */,
-				008B529C1AE0A9C10088E15D /* Main.storyboard */,
-				008B529F1AE0A9C10088E15D /* Images.xcassets */,
-				008B52A11AE0A9C10088E15D /* LaunchScreen.xib */,
+				0068E31A1AE1ED6F002DA9F2 /* Data Source */,
+				0068E31B1AE1ED79002DA9F2 /* Controller */,
+				0068E31C1AE1ED85002DA9F2 /* View */,
 				008B52961AE0A9C10088E15D /* MoodTracker.xcdatamodeld */,
+				0068E3191AE1ED58002DA9F2 /* Model */,
+				008B529F1AE0A9C10088E15D /* Images.xcassets */,
+				00D8D95B1AE4BEF400E6A008 /* Helper */,
 				008B528F1AE0A9C10088E15D /* Supporting Files */,
 			);
 			path = MoodTracker;
@@ -122,6 +189,34 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		00D8D95B1AE4BEF400E6A008 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				0068E3201AE1F7E9002DA9F2 /* WeatherGetter.h */,
+				0068E3211AE1F7E9002DA9F2 /* WeatherGetter.m */,
+				00A121FA1AE4AD1400491AF2 /* LocationManager.h */,
+				00A121FB1AE4AD1400491AF2 /* LocationManager.m */,
+			);
+			name = Helper;
+			sourceTree = "<group>";
+		};
+		324EBB0B43E88233C0BE4227 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				858E53264E93B6B34323BB03 /* Pods-MoodTracker.debug.xcconfig */,
+				3C2BE6AAE009601A4EB9207B /* Pods-MoodTracker.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		B3204A37D285666AB6575B6B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				896FCA38F34EE3C93D06CDD1 /* libPods-MoodTracker.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -129,9 +224,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 008B52B21AE0A9C20088E15D /* Build configuration list for PBXNativeTarget "MoodTracker" */;
 			buildPhases = (
+				FD0E407BEB85F6257A795659 /* Check Pods Manifest.lock */,
 				008B52881AE0A9C10088E15D /* Sources */,
 				008B52891AE0A9C10088E15D /* Frameworks */,
 				008B528A1AE0A9C10088E15D /* Resources */,
+				FBC9B7A87982724D7A3C3FEF /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -202,8 +299,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				008B529E1AE0A9C10088E15D /* Main.storyboard in Resources */,
-				008B52A31AE0A9C10088E15D /* LaunchScreen.xib in Resources */,
 				008B52A01AE0A9C10088E15D /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -217,15 +312,55 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		FBC9B7A87982724D7A3C3FEF /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MoodTracker/Pods-MoodTracker-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FD0E407BEB85F6257A795659 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		008B52881AE0A9C10088E15D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				008B52981AE0A9C10088E15D /* MoodTracker.xcdatamodeld in Sources */,
+				008B52BD1AE0C0C10088E15D /* MoodsViewController.m in Sources */,
+				00DBA9F41AE4E48E0033C873 /* MoodEntryTableViewCell.m in Sources */,
+				008B52C61AE0C87A0088E15D /* MoodEntryCreationViewController.m in Sources */,
 				008B52951AE0A9C10088E15D /* AppDelegate.m in Sources */,
-				008B529B1AE0A9C10088E15D /* ViewController.m in Sources */,
+				0068E3221AE1F7E9002DA9F2 /* WeatherGetter.m in Sources */,
+				00A121FC1AE4AD1400491AF2 /* LocationManager.m in Sources */,
+				008B52BC1AE0C0C10088E15D /* FetchedResultsControllerDataSource.m in Sources */,
 				008B52921AE0A9C10088E15D /* main.m in Sources */,
+				00D8D95E1AE4C16500E6A008 /* TickMarkSlider.m in Sources */,
+				008B52C01AE0C1C70088E15D /* MoodEntry.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -246,25 +381,6 @@
 			targetProxy = 008B52A91AE0A9C20088E15D /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		008B529C1AE0A9C10088E15D /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				008B529D1AE0A9C10088E15D /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		008B52A11AE0A9C10088E15D /* LaunchScreen.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				008B52A21AE0A9C10088E15D /* Base */,
-			);
-			name = LaunchScreen.xib;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		008B52B01AE0A9C20088E15D /* Debug */ = {
@@ -345,6 +461,7 @@
 		};
 		008B52B31AE0A9C20088E15D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 858E53264E93B6B34323BB03 /* Pods-MoodTracker.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = MoodTracker/Info.plist;
@@ -355,6 +472,7 @@
 		};
 		008B52B41AE0A9C20088E15D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3C2BE6AAE009601A4EB9207B /* Pods-MoodTracker.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = MoodTracker/Info.plist;
@@ -416,6 +534,7 @@
 				008B52B41AE0A9C20088E15D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		008B52B51AE0A9C20088E15D /* Build configuration list for PBXNativeTarget "MoodTrackerTests" */ = {
 			isa = XCConfigurationList;
@@ -424,6 +543,7 @@
 				008B52B71AE0A9C20088E15D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

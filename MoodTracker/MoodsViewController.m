@@ -6,21 +6,16 @@
 #import <BlocksKit+UIKit.h>
 #import "MoodEntryTableViewCell.h"
 
-static NSString* const selectItemSegue = @"selectItem";
-
 @interface MoodsViewController () <FetchedResultsControllerDataSourceDelegate>
 
 @property (nonatomic, strong) FetchedResultsControllerDataSource* fetchedResultsControllerDataSource;
-@property (nonatomic, strong) UITextField* titleField;
-
-@property (nonatomic, strong) NSArray *moodDescriptions;
-@property (nonatomic, strong) NSArray *energyDescriptions;
-
 @property (nonatomic, strong) NSManagedObjectContext *moc;
 
 @end
 
 @implementation MoodsViewController
+
+#pragma mark init
 
 -(instancetype)initWithManagedObjectContext:(NSManagedObjectContext*)managedObjectContext {
     self = [super init];
@@ -31,6 +26,8 @@ static NSString* const selectItemSegue = @"selectItem";
     
     return self;
 }
+
+#pragma mark view lifecycle
 
 - (void)viewDidLoad
 {
@@ -52,6 +49,8 @@ static NSString* const selectItemSegue = @"selectItem";
     self.fetchedResultsControllerDataSource.paused = YES;
 }
 
+#pragma mark add nav items
+
 -(void)addRightBarButton{
     __weak typeof (self) weakSelf = self;
     
@@ -60,6 +59,8 @@ static NSString* const selectItemSegue = @"selectItem";
     }];
 }
 
+
+#pragma mark fetched results controller setup
 
 - (void)setupFetchedResultsController
 {
@@ -76,6 +77,10 @@ static NSString* const selectItemSegue = @"selectItem";
     return [[NSFetchedResultsController alloc] initWithFetchRequest:request managedObjectContext:self.managedObjectContext sectionNameKeyPath:nil cacheName:nil];
 }
 
+- (NSManagedObjectContext*)managedObjectContext
+{
+    return self.moc;
+}
 
 #pragma mark Fetched Results Controller Delegate
 
@@ -104,11 +109,7 @@ static NSString* const selectItemSegue = @"selectItem";
                                    } failure:nil];
 }
 
-
-- (NSManagedObjectContext*)managedObjectContext
-{
-    return self.moc;
-}
+#pragma mark tableview delegate
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
     return [MoodEntryTableViewCell height];

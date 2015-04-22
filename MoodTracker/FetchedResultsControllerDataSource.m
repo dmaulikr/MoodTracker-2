@@ -75,7 +75,6 @@
     [fetchedResultsController performFetch:NULL];
 }
 
-
 - (void)setPaused:(BOOL)paused
 {
     _paused = paused;

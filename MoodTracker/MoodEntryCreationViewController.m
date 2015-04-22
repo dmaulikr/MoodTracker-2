@@ -18,6 +18,8 @@
 
 @interface MoodEntryCreationViewController () <SwipeViewDataSource, SwipeViewDelegate>
 
+@property (strong, nonatomic) NSManagedObjectContext *managedObjectContext;
+
 @property (strong, nonatomic) SwipeView *moodSwipeView;
 @property (strong, nonatomic) TickMarkSlider *anxietySlider;
 @property (strong, nonatomic) SwipeView *energySwipeView;
@@ -25,12 +27,11 @@
 @property (strong, nonatomic) NSArray *moodIcons;
 @property (strong, nonatomic) NSArray *energyIcons;
 
-@property (strong, nonatomic) NSManagedObjectContext *managedObjectContext;
-@property (strong, nonatomic) UINavigationController *navigationController;
-
 @end
 
 @implementation MoodEntryCreationViewController
+
+#pragma mark init
 
 -(instancetype)initWithManagedObjectContext:(NSManagedObjectContext*)context{
     self = [super init];
@@ -41,6 +42,8 @@
     
     return self;
 }
+
+#pragma mark view loading
 
 -(void)loadView {
     
@@ -128,7 +131,7 @@
     {
         CGFloat labelSize = 10;
         CGFloat xOrigin = CGRectGetMinX(self.anxietySlider.frame) + 12; //track is inset 15 pt on both sides
-        CGFloat maxX = CGRectGetMaxX(self.anxietySlider.frame) - 18;
+        CGFloat maxX = CGRectGetMaxX(self.anxietySlider.frame) - 18;    //some fiddling to get labels centered
         CGFloat intervals = 4.;
         CGFloat intervalWidth = (maxX - xOrigin) / intervals; //4 intervals from 1 to 5
         
@@ -190,12 +193,24 @@
     }
 }
 
+
+#pragma mark view lifecycle
+
 -(void)viewDidLoad{
     [super viewDidLoad];
     
     [self setIconsForEnergy];
     [self setIconsForMood];
 }
+
+#pragma mark nav
+
+-(void)showMoodHistory{
+    MoodsViewController *viewController = [[MoodsViewController alloc] initWithManagedObjectContext:self.managedObjectContext];
+    [self presentViewController:[[UINavigationController alloc] initWithRootViewController:viewController] animated:YES completion:nil];
+}
+
+#pragma mark model
 
 -(void)recordMood{
     NSUInteger mood = self.moodSwipeView.currentItemIndex;
@@ -214,10 +229,7 @@
     }];
 }
 
--(void)showMoodHistory{
-    MoodsViewController *viewController = [[MoodsViewController alloc] initWithManagedObjectContext:self.managedObjectContext];
-    [self presentViewController:[[UINavigationController alloc] initWithRootViewController:viewController] animated:YES completion:nil];
-}
+#pragma mark icons
 
 -(void)setIconsForMood {
     self.moodIcons = @[[UIImage imageNamed:@"very_sad"],
@@ -264,7 +276,5 @@
 -(CGSize)swipeViewItemSize:(SwipeView *)swipeView{
     return CGSizeMake(CGRectGetWidth(swipeView.bounds) / 2, CGRectGetHeight(swipeView.bounds));
 }
-
-#pragma mark SwipeView Delegate
 
 @end
